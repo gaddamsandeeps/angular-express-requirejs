@@ -1,0 +1,18 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <script src="js/lib/min/require.min.js"></script>
+    <script src="js/reqConfig.js"></script>
+    <script src="js/main.js"></script>
+    <header ui-view="header" class="home" id="appHeader"></header>
+    <section class="content-section">
+        <div class="nav" ui-view="navSection" id="navi"></div>
+        <div ui-view="content" id="appSection" class="container"></div>
+    </section>
+    <footer ui-view="footer" id="appFooter"></footer>
+</body>
+
+</html>
