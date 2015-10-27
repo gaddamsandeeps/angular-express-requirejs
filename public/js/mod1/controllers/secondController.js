@@ -1,11 +1,12 @@
-define(['mod1/controllers/controllerModule','jquery'], function(controllerModule,$) {
+define(['mod1/controllers/controllerModule', 'jquery'], function(controllerModule, $) {
 
-    controllerModule.controller('secondController', ["$rootScope", '$state', '$http', '$scope',
+    controllerModule.controller('secondController', ["$rootScope", '$http', '$scope',
         function($rootScope, $http, $scope) {
-        $scope.msg = "secondController - sandy---";
+            $scope.msg = "secondController - tried with angular and require JS";
 
-        $scope.displays = function(text) {
-            return "secondController - wetretret--dgfdg";
-        };
-    }]);
+            $scope.wish = function(text) {
+                return "Good Afternoon " + text;
+            };
+        }
+    ]);
 });

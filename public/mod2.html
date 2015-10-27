@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <style type="text/css">
+    body {
+        margin: 110px 80px 100px 0px;
+        text-align: center;
+    }
+    </style>
+    <title>Module 2</title>
+    <script src="js/lib/min/require.min.js"></script>
+    <script src="js/reqConfig.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<header ui-view="header" class="home" id="appHeader"></header>
+
+<body>
+    <a href=".">One</a>
+    <section class="content-section">
+        <div class="nav" ui-view="navSection" id="navi"></div>
+        <div ui-view="content" id="appSection" class="container"></div>
+    </section>
+</body>
+<footer ui-view="footer" id="appFooter"></footer>
+
+</html>

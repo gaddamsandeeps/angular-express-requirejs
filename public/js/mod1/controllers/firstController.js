@@ -2,10 +2,10 @@ define(['mod1/controllers/controllerModule'], function(controllerModule) {
 
     controllerModule.controller('firstController', ["$rootScope", '$http', '$scope',
         function($rootScope, $http, $scope) {
-            $scope.msg = "firstController - sandy---";
+            $scope.msg = "firstController - tried with angular and require JS";
 
-            $scope.displays = function() {
-                return "firstController - welcomes sandy";
+            $scope.displays = function(msg) {
+                return "Good Morning " + msg;
             };
         }
     ]);
