@@ -1,6 +1,6 @@
 var routes = {
     /*Home page & static pages*/
-    "": {
+    "/": {
         module: {
             "app": "appMod",
             "config": "configMod",
@@ -8,7 +8,7 @@ var routes = {
             "moduleName": "AR"
         }
     },
-    "two": {
+    "/two": {
         module: {
             "app": "appMod2",
             "config": "configMod2",
@@ -19,12 +19,12 @@ var routes = {
 };
 
 function getRoute() {
-    console.log(location)
-    // var module;
-    // if (typeof routes[location.pathname] !== "undefined") {
-    //     module = routes[location.pathname];
-    // }
-    return routes[location.hash];
+    console.log(location.pathname)
+    var module;
+    if (typeof routes[location.pathname] !== "undefined") {
+        module = routes[location.pathname];
+    }
+    return routes[location.pathname];
 }
 
 var r = getRoute();
